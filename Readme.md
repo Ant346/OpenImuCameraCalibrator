@@ -73,6 +73,8 @@ sudo apt-get install libopencv-dev libopencv-contrib-dev
 ``` bash
 git clone https://github.com/ceres-solver/ceres-solver
 git checkout 2.1.0
+sudo apt-get install protobuf-compiler libprotobuf-dev
+sudo apt install libgoogle-glog-dev 
 mkdir -p build && cd build && cmake .. -DBUILD_EXAMPLES=OFF -DCMAKE_BUILD_TYPE=Release
 sudo make -j install
 ```
